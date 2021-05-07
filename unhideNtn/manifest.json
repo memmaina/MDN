@@ -1,0 +1,20 @@
+{
+    "description": "unhide hidden Divs by removing the display css property.",
+    "manifest_version": 2,
+    "name": "unhideDivs",
+    "version": "1.0",
+    "icons": {
+        "32": "icons/unhide-32.png",
+        "96": "icons/unhide-96.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://nation.africa/*"
+            ],
+            "js": [
+                "unhideDiv.js"
+            ]
+        }
+    ]
+}
